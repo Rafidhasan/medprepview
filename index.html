@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedPrep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+</head>
+<body>
+    <!--Navbar-->
+
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                    <div class="right menu">
+                        <a class="item active">Dashboard</a>
+                        <a class="item">Analytics</a>
+                        <a class="item">Questions</a>
+                        <a class="item">Solver Matrix</a>
+                        <a class="item">Profile</a>
+                        <a class="item">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sidenav--> 
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                </div>
+      
+            </div>
+        </div>   
+        <!--sidenav-->  
+    </div>
+    
+    <div class="pushable segment">
+        <div class="ui teal inverted sidebar vertical menu">
+            <a class="item active">Dashboard</a>
+            <a class="item">Analytics</a>
+            <a class="item">Questions</a>
+            <a class="item">Solver Matrix</a>
+            <a class="item">Profile</a>
+            <a class="item">Settings</a>
+        </div>
+    </div>
+
+    <!--/Navbar-->
+    
+    <!--welcome back section-->
+    <div class="conatiner">
+        <div class="container ui stackable two column center aligned  grid">
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="content">
+                        <div class="center aligned header">Jenny Hess</div>
+                        <div class="center aligned description">
+                        <p>Welcome back Jenny</p>
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <div class="center aligned author">
+                        <img class="ui avatar image" src="https://semantic-ui.com/images/avatar/small/jenny.jpg"> Jenny
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui success message">
+                    <div class="stackable ui grid">
+                        <div class="two wide column">
+                            <i class="ui large circular inverted teal info letter icon"></i>
+                        </div>
+                        <div class="fourteen wide column">
+                            <div class="header">
+                                Some text
+                                </div>
+                               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, impedit?</p>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+    </div>
+    
+
+    <!--/Welcome back section-->
+
+    <!--Progress section-->
+
+    <div class="conatiner ui segment">
+        <div class="ui grid">
+            <div class="column">
+                    <h1 class="ui massive center aligned header">Progress</h1>
+            </div> 
+        </div>
+        <div class="container ui stackable four column divided center aligned grid">
+           <div class="column">
+                    <i class="ui inverted huge violet dashboard icon"></i>
+                    <h1 class="ui large header">Days to go</h1>
+                    <h1 class="ui massive header count">25</h1>
+            </div>
+           <div class="column">
+                <center>
+                    <i class="ui inverted huge blue clock outline icon"></i>
+                    <h1 class="ui large header">Total Score</h1>
+                    <h1 class="ui massive header count">105</h1>
+                </center>
+           </div>
+           <div class="column">
+                    <i class="ui inverted huge brown stopwatch icon"></i>
+                    <h1 class="ui large header">Average time per question</h1>
+                    <h1 class="ui massive header count">1200</h1>
+           </div>
+        </div>
+    </div>
+
+    <!--/Progress section-->
+
+
+    <!--Leaderboard & notification section-->
+   
+    <div class="ui grid">
+        
+    </div>
+
+    <!--/Leaderboard & notification section-->
+
+
+    <!--Init jQuery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <!--Semantic main js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <!--Semantic UI default js-->
+    <script>
+       //init mobile sidebar
+       $('.ui.sidebar').sidebar({
+        }).sidebar('attach events', '#mobile_item');
+    </script>
+    <!--custom js-->
+    <script>  
+        // Counter
+        $('.count').each(function () {
+          $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+          }, {
+              duration: 1500,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              }
+            });
+        });
+    </script>
+</body>
+</html>
