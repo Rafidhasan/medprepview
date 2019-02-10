@@ -21,6 +21,16 @@
     color: red;
 }
 
+.large_marginX {
+    margin: 35px 0 !important;
+}
+
+.huge_marginX {
+    margin: 60px 0 !important;
+    color: red;
+}
+
+
 /* cicle chart */
 
 .single-chart {
@@ -77,4 +87,9 @@
     text-anchor: middle;
   }
 
-  /* cicle chart */
+  /* cicle chart */\
+
+
+  #all_time_view {
+      display: none;
+  }

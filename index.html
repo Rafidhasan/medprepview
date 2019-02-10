@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MedPrep</title>
+    <!--datatable's default css-->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -54,7 +59,6 @@
     <!--/Navbar-->
     
     <!--welcome back section-->
-    <div class="">
         <div class="ui stackable three column center aligned  grid">
             <div class="column  medium_marginX">
                 <div class="ui fluid card">
@@ -88,7 +92,7 @@
             </div>
             <div class="column">
                 <!-- circular chart -->
-                <div class="ui stackable four column center aligned  grid">
+                <div class="ui four column center aligned  grid">
                     <div class="column">
                         <div class="single-chart">
                             <svg viewBox="0 0 36 36" class="circular-chart orange">
@@ -173,7 +177,7 @@
     <!--Progress section-->
 
     <div class="conatiner ui segment">
-        <div class="ui grid">
+        <div class="ui three column center aligned grid">
             <div class="column">
                     <h2 class="ui center aligned header">Progress</h2>
             </div> 
@@ -204,11 +208,152 @@
 
     <!--Leaderboard & notification section-->
    
-    <div class="ui grid">
-        
-    </div>
+    <!--Leaderboard table-->
+    <div class="ui stackable grid center aligned">
+            <div class="nine wide column medium_marginX ui" id="thirty_days_view">
+                <table class="ui single line table" >
+                    <div class="ui stackable  grid">
+                        <div class="center aligned  wide column">
+                            <div class="ui attached large buttons">
+                                <button class="ui button" id="thirty_days_button" onclick="toggle_data()">30 days Leaderboard</button>
+                                <div class="or"></div>
+                                <button class="ui button" id="all_time_button" onclick="toggle_data()">Al time Leaderboard</button>
+                            </div>
+                        </div>
+                        <div class="right floated nine wide column">
+                            <div class="ui large buttons">
+                                <h2 style="color: black;">Leaderboard</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conatiner">
+                        <thead>   
+                            <tr>
+                            <th>Registration Date</th>
+                            <th>E-mail address</th>
+                            <th>Premium Plan</th>
+                            <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>John Lilki</td>
+                            <td>September 14, 2013</td>
+                            <td>jhlilk22@yahoo.com</td>
+                            <td>No</td>
+                            </tr>
+                            <tr>
+                            <td>Jamie Harington</td>
+                            <td>January 11, 2014</td>
+                            <td>jamieharingonton@yahoo.com</td>
+                            <td>Yes</td>
+                            </tr>
+                            <tr>
+                            <td>Jill Lewis</td>
+                            <td>May 11, 2014</td>
+                            <td>jilsewris22@yahoo.com</td>
+                            <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+            </div>
+            <div class="nine wide column medium_marginX ui" id="all_time_view">
+                    <table class="ui single line table" >
+                        <div class="ui stackable  grid">
+                            <div class="center aligned  wide column">
+                                <div class="ui attached large buttons">
+                                    <button class="ui button" id="thirty_days_button" onclick="toggle_data()">30 days Leaderboard</button>
+                                    <div class="or"></div>
+                                    <button class="ui button" id="all_time_button" onclick="toggle_data()">All time Leaderboard</button>
+                                </div>
+                            </div>
+                            <div class="right floated nine wide column">
+                                <div class="ui large buttons">
+                                    <h2 style="color: black;">Leaderboard</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="continer">
+                            <thead>   
+                                <tr>
+                                <th>asd</th>
+                                <th>E-mail address</th>
+                                <th>Premium Plan</th>
+                                <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>John Lilki</td>
+                                <td>September 14, 2013</td>
+                                <td>jhlilk22@yahoo.com</td>
+                                <td>No</td>
+                                </tr>
+                                <tr>
+                                <td>Jamie Harington</td>
+                                <td>January 11, 2014</td>
+                                <td>jamieharingonton@yahoo.com</td>
+                                <td>Yes</td>
+                                </tr>
+                                <tr>
+                                <td>Jill Lewis</td>
+                                <td>May 11, 2014</td>
+                                <td>jilsewris22@yahoo.com</td>
+                                <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </table>
+                </div>
+            <div class="four wide column">
+                <!--Notification-->
+                <div class="ui teal massive card huge_marginX" style="width: 100%;">
+                    <div class="content">
+                        <div class="ui red header">Notification</div>
+                    </div>
+                    <div class="content">
+                        <h4 class="ui sub header">Activity</h4>
+                        <div class="ui small feed">
+                        <div class="event">
+                            <div class="content">
+                            <div class="summary">
+                                You're doing great!!!!
+                            </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="content">
+                            <div class="summary">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque laboriosam et.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <div class="content">
+                            <div class="summary">
+                               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, maxime.
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="two wide column" style="margin-top: 40px;">
+                <button class="ui basic violet fluid button medium_marginX floated left">
+                    <i class="unlock basic large icon"></i>
+                    Start Question Session
+                </button>
+                <button class="ui basic teal fluid button">
+                    <i class="book basic large icon"></i>
+                    See Analysis
+                </button>
+        </div>
+    <!--/Leaderboard table-->
 
     <!--/Leaderboard & notification section-->
+
 
 
     <!--Init jQuery-->
@@ -216,6 +361,13 @@
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <!--datatables custom js-->
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
     <!--Semantic main js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <!--Semantic UI default js-->
@@ -238,6 +390,14 @@
               }
             });
         });
+    </script>
+
+    <script>
+        //controlling the table
+        document.getElementById("all_time_view").style.display = "none";
+        function toggle_data() {
+             
+        }
     </script>
 </body>
 </html>
