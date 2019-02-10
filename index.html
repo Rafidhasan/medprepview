@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MedPrep</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!--Navbar-->
@@ -53,14 +54,15 @@
     <!--/Navbar-->
     
     <!--welcome back section-->
-    <div class="conatiner">
-        <div class="container ui stackable two column center aligned  grid">
-            <div class="column">
+    <div class="">
+        <div class="ui stackable three column center aligned  grid">
+            <div class="column  medium_marginX">
                 <div class="ui fluid card">
                     <div class="content">
                         <div class="center aligned header">Jenny Hess</div>
                         <div class="center aligned description">
                         <p>Welcome back Jenny</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aut quidem, dignissimos, maiores temporibus laborum dolores quae totam nisi voluptas illum blanditiis delectus!</p>
                         </div>
                     </div>
                     <div class="extra content">
@@ -71,7 +73,7 @@
                 </div>
             </div>
             <div class="column">
-                <div class="ui success message">
+                <div class="ui success message  medium_marginX">
                     <div class="stackable ui grid">
                         <div class="two wide column">
                             <i class="ui large circular inverted teal info letter icon"></i>
@@ -82,8 +84,85 @@
                                 </div>
                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, impedit?</p>
                             </div>
-                        </div>
                     </div> 
+            </div>
+            <div class="column">
+                <!-- circular chart -->
+                <div class="ui stackable four column center aligned  grid">
+                    <div class="column">
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <!-- change the stroke-dasharray using percentage to attach the exact loader dynamically -->
+                              <path class="circle"
+                                stroke-dasharray="30, 100" 
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              /> 
+                              <text x="18" y="20.35" class="percentage">30%</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="column">
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart green">
+                                    <path class="circle-bg"
+                                    d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <path class="circle"
+                                    stroke-dasharray="60, 100"
+                                    d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <text x="18" y="20.35" class="percentage">60%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    <div class="column">
+                        <div class="single-chart">
+                            <svg viewBox="0 0 36 36" class="circular-chart red">
+                              <path class="circle-bg"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <path class="circle"
+                                stroke-dasharray="85, 100"
+                                d="M18 2.0845
+                                  a 15.9155 15.9155 0 0 1 0 31.831
+                                  a 15.9155 15.9155 0 0 1 0 -31.831"
+                              />
+                              <text x="18" y="20.35" class="percentage">85%</text>
+                            </svg>
+                          </div>
+                    </div>
+                    <div class="column">
+                            <div class="single-chart">
+                                <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                  <path class="circle-bg"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <path class="circle"
+                                    stroke-dasharray="55, 100"
+                                    d="M18 2.0845
+                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                                  />
+                                  <text x="18" y="20.35" class="percentage">55%</text>
+                                </svg>
+                              </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -96,26 +175,26 @@
     <div class="conatiner ui segment">
         <div class="ui grid">
             <div class="column">
-                    <h1 class="ui massive center aligned header">Progress</h1>
+                    <h2 class="ui center aligned header">Progress</h2>
             </div> 
         </div>
-        <div class="container ui stackable four column divided center aligned grid">
+        <div class="container large ui stackable four column divided center aligned grid">
            <div class="column">
-                    <i class="ui inverted huge violet dashboard icon"></i>
-                    <h1 class="ui large header">Days to go</h1>
-                    <h1 class="ui massive header count">25</h1>
+                    <i class="ui big violet dashboard icon"></i>
+                    <h3 class="ui big header">Days to go</h3>
+                    <h3 class="ui large header count">25</h3>
             </div>
            <div class="column">
                 <center>
-                    <i class="ui inverted huge blue clock outline icon"></i>
-                    <h1 class="ui large header">Total Score</h1>
-                    <h1 class="ui massive header count">105</h1>
+                    <i class="ui big inverted blue clock outline icon"></i>
+                    <h3 class="ui big header">Total Score</h3>
+                    <h3 class="ui big header count">105</h3>
                 </center>
            </div>
            <div class="column">
-                    <i class="ui inverted huge brown stopwatch icon"></i>
-                    <h1 class="ui large header">Average time per question</h1>
-                    <h1 class="ui massive header count">1200</h1>
+                    <i class="ui big inverted brown stopwatch icon"></i>
+                    <h3 class="ui big header">Average time per question</h3>
+                    <h3 class="ui big header count">1200</h3>
            </div>
         </div>
     </div>
