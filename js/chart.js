@@ -1,5 +1,4 @@
 window.onload = function () {
-
     var chart = new CanvasJS.Chart("chartContainer", {
         exportEnabled: true,
         animationEnabled: true,
@@ -11,8 +10,8 @@ window.onload = function () {
         },
         axisY: {
             title: "Good marks",
-            titleFontColor: "#4F81BC",
-            lineColor: "#4F81BC",
+            titleFontColor: "#008080",
+            lineColor: "#008080",
             labelFontColor: "#4F81BC",
             tickColor: "#4F81BC",
             valueFormatString: "#0"
@@ -34,6 +33,7 @@ window.onload = function () {
         },
         data: [{
             type: "column",
+            color: "#008080",  
             name: "Right Answer",
             showInLegend: true,      
             yValueFormatString: "",
@@ -47,6 +47,7 @@ window.onload = function () {
         },
         {
             type: "column",
+            color: "#FF4500",  
             name: "Wrong Answer",
             axisYType: "secondary",
             showInLegend: true,
