@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MedPrep</title>
-    <!--datatable's default css-->
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-    
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -45,20 +41,19 @@
         <!--sidenav-->  
     </div>
     
-    <div class="pushable segment">
-        <div class="ui teal inverted sidebar vertical menu">
-            <a class="item active">Dashboard</a>
-            <a class="item">Analytics</a>
-            <a class="item">Questions</a>
-            <a class="item">Solver Matrix</a>
-            <a class="item">Profile</a>
-            <a class="item">Settings</a>
-        </div>
+    <div class="ui teal inverted sidebar vertical pushar menu">
+        <a class="item active">Dashboard</a>
+        <a class="item">Analytics</a>
+        <a class="item">Questions</a>
+        <a class="item">Solver Matrix</a>
+        <a class="item">Profile</a>
+        <a class="item">Settings</a>
     </div>
 
     <!--/Navbar-->
     
     <!--welcome back section-->
+    <div class="pusher">
         <div class="ui stackable three column center aligned  grid">
             <div class="column  medium_marginX">
                 <div class="ui fluid card">
@@ -305,12 +300,14 @@
     <!--/Leaderboard table-->
 
     <!--/Leaderboard & notification section-->
+    </div>
+        
 
 
 
     <!--Chart section-->
 
-    <div id="chartContainer" style="height: 350px; width: 75%; margin-bottom: 120px; margin-top: 40px; padding: 20px;"></div>
+    <div id="chartContainer" style="height: 350px; width: 74%; margin-bottom: 120px; margin-top: 40px; padding: 20px;"></div>
 
     <!--/Chart section-->
 
@@ -320,7 +317,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!--chart-->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="js/canvasjs.min.js"></script>
     <script src="js/chart.js"></script>
 
     <!--Semantic main js-->
