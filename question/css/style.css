@@ -46,3 +46,13 @@ html {
 }
 
 /*section*/
+
+@media only screen and (max-width: 800px) {
+  .section {
+    margin-left: 70px !important;
+    margin-top: 50px;
+  }
+  .section_answer_progress, .section_answer_analysis {
+    margin-left: 70px !important;
+  }
+}
