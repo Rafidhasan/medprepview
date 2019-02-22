@@ -16,11 +16,17 @@ html {
     display: block !important;
   }
   
-  .sidebar .item i {
-    font-size: 24px;
+  .sidebar .item .dropdown {
     margin-top: -5px !important;
   }
   
+  .menu_icon {
+    color: whitesmoke !important;
+    padding: 14px !important;
+    font-size: 24px !important;
+  }
+  
+
   .logo {
     height: 48px !important;
     padding: 10px !important;

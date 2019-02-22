@@ -4,8 +4,7 @@ $(".openbtn").on("click", function() {
     $(".sidebar z").toggleClass("displaynone");
     $(".ui.accordion").toggleClass("displaynone");
     $(".ui.dropdown.item").toggleClass("displayblock");
- 
-    $(".logo").find('img').toggle();
+
  
   })
   $(".ui.dropdown").dropdown({
