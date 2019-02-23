@@ -10,211 +10,206 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--Navbar-->
+   <!--Navbar-->
 
-    <div class="ui inverted teal sidebar vertical left menu overlay visible" style="-webkit-transition-duration: 0.1s; overflow: visible !important;">
-        <a class="openbtn">
-            <i class="icon content menu_icon" style="margin-left: 4px; font-size: 20px;"></i>
-        </a>
-        <div class="ui accordion" style="margin-top: 12px;">
-            <a class="title item active">Work Smart<i class="dropdown icon"></i></a>
-            <div class="content">
-                <a class="item" href="#">Sample</a>
-            </div>
-      
-            <div class="title item">
-                <i class="dropdown icon"></i>Work Hard
-            </div>
-            <div class="content">
-                <a class="item" href="#">Sample</a>
-            </div>
-          
-            <div class="title item">
-                <i class="dropdown icon"></i> Mock Tests
-            </div>
-            <div class="content">
-                <a class="item" href="#">Sample</a>
-            </div>
-      
-            <a class="item">
-                <b>Group learning <i class="users icon" style="margin-left: 15px; font-size: 20px;"></i></b>
-            </a>
-
-            <a class="item">
-                <b>Revision Advice</b>
-            </a>
-
-            <a class="item">
-                <b>Tags</b>
-            </a>
-        </div>
-        <div class="ui dropdown item displaynone">
-                <i class="icon pencil alternate icon"></i>
-            </div>
-            <div class="ui dropdown item displaynone">
-                <i class="icon demo-icon world icon-globe"></i>
-            </div>
-            <div class="ui dropdown item displaynone">
-            <i class="icon demo-icon  icon-params alarm"></i>
-            </div>
-        </div>
-        <div class="pusher">
-            <div class="ui teal stackable massive inverted menu asd borderless" style="border-radius: 0!important; border: 0; margin-left: 260px; -webkit-transition-duration: 0.1s;">
-                <a class="item" href="">MedPrep</a>
-                <div class="right menu">
-                    <a class="item" href="../index.html">Dashboard</a>
-                    <a class="item active" href="index.html">Question</a>
-                    <div class="ui pointing dropdown link item">
-                        <span class="text">Language <i class="dropdown icon"></i></span>
-                        <div class="menu">
-                            <div class="item active">English</div>
-                            <div class="item">Bangla</div>
-                        </div>
+   <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                    <div class="right menu">
+                        <a class="item active">Dashboard</a>
+                        <a class="item" href="medprepstudash/index.html">Analytics</a>
+                        <a class="item" href="question/index.html">Questions</a>
+                        <a class="item">Solver Matrix</a>
+                        <a class="item">Profile</a>
+                        <a class="item">Settings</a>
                     </div>
                 </div>
             </div>
         </div>
-    <!--/Navbar-->
+        <!--sidenav--> 
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                </div>
+    
+            </div>
+        </div>   
+        <!--sidenav-->  
+    </div>
 
-    <!--Table section-->
-    <div class="ui stackable grid">
-            <div class="ten wide column">
-                <section class="section section_table">
-                    <div class="hero_header">
-                        <h1 class="massive header">Work Smart</h1
-                        <div class="question">
-                                <h3>smaple Question</h3>
-                                <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsum facilis quidem, placeat expedita perferendis harum asperiores iusto laboriosam vel, laborum deleniti corrupti obcaecati fugiat recusandae adipisci voluptate optio earum nobis aliquid nulla. Voluptatibus aliquam autem assumenda dignissimos qui iusto pariatur alias eos sequi nisi ipsam odit quaerat ipsa, fugiat vero sit soluta aspernatur aliquid!</h5>
-                        </div>
-                            <table class="ui compact celled definition table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="collapsing">
-                                                <div class="ui left floated compact secondary segment">
-                                                    <div class="ui fitted checkbox">
-                                                        <input type="checkbox">
-                                                        <label></label>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum culpa labore, consequatur fugit excepturi unde fugiat adipisci rerum ex!</td>
-                                    <tr/>
-                                    <tr>
-                                        <td class="collapsing">
-                                            <div class="ui left floated compact secondary segment">
-                                                <div class="ui fitted checkbox">
-                                                    <input type="checkbox">
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>Sample Answer</td>
-                                    <tr/>
-                                    <tr>
-                                        <td class="collapsing">
-                                            <div class="ui left floated compact secondary segment">
-                                                <div class="ui fitted checkbox">
-                                                    <input type="checkbox">
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>Sample Answer</td>
-                                    <tr/>
-                                    <tr>
-                                        <td class="collapsing">
-                                            <div class="ui left floated compact secondary segment">
-                                                <div class="ui fitted checkbox">
-                                                    <input type="checkbox">
-                                                    <label></label>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    <td>Sample Answer</td>
-                                <tr/> 
-                            </tbody>
-                                <tfoot class="full-width">
-                                <tr>
-                                    <th></th>
-                                    <th colspan="4">
-                                    <div class="ui small teal button">
-                                        Submit Answer
-                                    </div>
-                                    <div class="ui small button" style="margin-top: 5px;">
-                                        Skip Question
-                                    </div>
-                                    </th>
-                                </tr>
-                            </tfoot>
-                        </table>    <!--Table section-->
-                        <div class="summery">
-                            <h3>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus autem quos accusamus esse quidem nesciunt animi praesentium nemo alias, error sit deserunt aperiam numquam! Voluptatem, qui aut sed minima repellendus adipisci numquam ipsa laudantium eum assumenda iste fuga obcaecati quam eos laboriosam culpa maxime eaque possimus ad aspernatur ab voluptatum commodi harum. Labore quo non laboriosam error doloremque maxime explicabo atque, magni cumque beatae consequatur aut dignissimos animi mollitia eligendi aperiam incidunt fugiat sint voluptatibus. Aliquid expedita sit voluptates magnam eos reiciendis! Quis veritatis laborum quod numquam quam illum eligendi, suscipit tempora omnis fugit dolore necessitatibus recusandae inventore temporibus dolorem quas molestiae adipisci? Temporibus quisquam iste inventore enim. Ipsum possimus ipsa beatae reprehenderit totam veniam! Eos maiores minus illum?
-                            </h3>
-                        </div>
+    <div class="ui teal inverted sidebar vertical pushar menu">
+        <a class="item active">Dashboard</a>
+        <a class="item" href="medprepstudash/index.html">Analytics</a>
+        <a class="item">Questions</a>
+        <a class="item">Solver Matrix</a>
+        <a class="item">Profile</a>
+        <a class="item">Settings</a>
+    </div>
+
+    <!--/Navbar-->
+    
+    <div class="pusher">
+        <!--message section-->
+        <section class="section message_section">
+            <div class="ui center aligned blue message">
+                <div class="ui center aligned  stackable grid">
+                    <div class="ten wide column">
+                        <h3 class="message_header">Current Option Selected!!</h3>
+                        <h5> <span class="message_text">Keywords: none</span>   <span class="message_text">No. of Question: 10</span>   Curiculla: All</h5>
                     </div>
                     <div class="six wide column">
-                        <!--ANswer statistics section-->
-                        <section class="section_answer_progress">
-                            <div class="ui segment" style="margin-right: 20px; height: 400px;margin-top: 80px; ">
-                                <div class="segment_header">
-                                    <h2>Answer Statistics</h2>
-                                </div>
-                                <hr>
-                                <div class="ui indicating error progress" data-value="70" data-total="200">
-                                    <div class="bar"  style="width: 15%;">
-                                        <div class="progress">15%</div>
-                                    </div>
-                                </div>
-                                <div class="ui indicating progress" data-value="70" data-total="200">
-                                    <div class="bar"  style="width: 45%;">
-                                        <div class="progress">45%</div>
-                                    </div>
-                                </div>
-                                <div class="ui indicating progress" data-value="70" data-total="200">
-                                    <div class="bar"  style="width: 30%;">
-                                        <div class="progress">30%</div>
-                                    </div>
-                                </div>
-                                <div class="ui indicating success progress" data-value="70" data-total="200">
-                                    <div class="bar" style="width: 65%;">
-                                        <div class="progress">65%</div>
-                                    </div>
-                                </div>
-                                <div class="ui indicating success progress" data-value="70" data-total="200">
-                                    <div class="bar"  style="width: 96%;">
-                                        <div class="progress">96%</div>
-                                        </div>
-                                </div>
-                                <div class="segment_footer">
-                                    <h3>Times Answerd: 9896</h3>
-                                </div>
+                        <div class="ui animated fade teal large button" style="margin-top:10px;" tabindex="0">
+                            <div class="visible content">Sign-up for a Pro account</div>
+                            <div class="hidden content">
+                                $12.99 a month
                             </div>
-                        </section>
-
-                        <section class="section_answer_analysis">
-                            <div class="ui segment" style="margin-right: 20px; height: 400px;margin-top: 80px; ">
-                                <div class="segment_header">
-                                    <h2>Test Analysis</h2>
-                                </div>
-                                <hr>
-                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                            </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <!--/message section-->
 
-    </div><!--pusher-->
+
+        <section class="section section_message_table">
+            <!--1st row-->
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                    <form class="ui form attached fluid segment custom_height_table">
+                        <div class="inline field">
+                            <h3 style="margin-bottom: 15px;">Question Types</h3>
+                            <div class="ui checkbox">
+                            <input type="checkbox" id="terms">
+                            <label for="terms" class="custom_p">Multiple Choice</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="eight wide column">
+                    <div class="ui attached fluid segment form custom_height_table">
+                        <h3 style="margin-bottom: 15px;">With Questions..</h3>
+                        <div class="field">
+                            <div class="ui stackable grid">
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">I have not seen before</label>
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">I have got wrong</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui stackable grid">
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">All</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--2nd row-->
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                    <div class="ui attached fluid segment form custom_height_table">
+                        <h3 style="margin-bottom: 15px;">Rivision Type</h3>
+                        <div class="field">
+                            <div class="ui stackable grid">
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">Leaning(Show Answers)</label>
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">Exam(Hide Answers)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight wide column">
+                    <form class="ui form attached fluid segment custom_height_table">
+                        <div class="inline field">
+                            <h3 style="margin-bottom: 15px;">Number of Questions</h3>
+                            <select class="ui fluid dropdown">
+                                <option>Choose</option>
+                                <option>1</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--3rd row-->
+            <div class="ui stackable grid">
+                <div class="eight wide column">
+                    <div class="ui attached fluid segment form custom_height_table">
+                        <h3 style="margin-bottom: 15px;">Rivision Type</h3>
+                        <div class="field">
+                            <div class="ui stackable grid">
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">Random</label>
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">Past Paper</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui stackable grid">
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">One Topic</label>
+                                    </div>
+                                </div>
+                                <div class="eight wide column">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="fruit" tabindex="0" class="hidden">
+                                        <label class="custom_p">Multiple Topic</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <button class="huge ui teal fluid button" style="margin-top: 25px;">
+                    Generate Test
+                </button>
+            </center>
+        </section>
+    </div>
 
     <!--Init jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
-    <!--chart js-->
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="js/chart.js"></script>
 
     <!--Semantic main js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
@@ -224,9 +219,12 @@
 
     <!--semantioc default js-->
     <script>
-
+        //sidebar
+        $('.ui.sidebar').sidebar({}).sidebar('attach events', '#mobile_item');
+        //dropdown
         $('.ui.dropdown').dropdown();
-
+        //checkbox
+        $('.ui.radio.checkbox').checkbox();
     </script>
 
 </body>
