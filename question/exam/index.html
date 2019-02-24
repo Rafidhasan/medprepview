@@ -23,7 +23,7 @@
         </a>
     </nav>
 
-    <div class="slider mt-5" style=""  pause-on-hover="true">
+    <div class="slider mt-5" style=""  pause-on-hover="true" id="slider">
         <div class="container" id="slider_one">
             <h1 class="ui large header">Sample Question - 1</h1>
             <h3 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum ipsum similique ducimus fuga reiciendis. Eveniet natus rem rerum tempore labore iure ut eum, excepturi quidem voluptate quos. Excepturi molestias voluptatibus debitis laboriosam omnis, molestiae, ex, ad repudiandae dicta quos suscipit vel voluptatum. Illo nemo repudiandae, eveniet eligendi maiores commodi!</h3>
@@ -67,6 +67,9 @@
                     </div>
                 </div>
             </div>
+            <button class="btn_end btn btn-lg btn-success d-none">
+                asd
+            </button>
         </div>
         <div class="container" id="slider_two">
             <h1 class="ui large header">Sample Question - 2</h1>
@@ -156,8 +159,38 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="slider_four">
-        
+        <div class="" id="slider_four">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title">Answer Statistics</h3>
+                        <hr>
+                        <div class="progress my-3" style="height: 30px;">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                        <div class="progress mb-3" style="height: 30px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                        <div class="progress mb-3" style="height: 30px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                        <div class="progress mb-3" style="height: 30px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h3 class="card-title">Test Analysis</h3>
+                        <hr>
+                        <canvas id="doughnut-chart" width="800" height="350"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -165,7 +198,7 @@
     <!--Init jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
-    <!--Semantic main js-->
+    <!--Bootstrap main js-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -173,6 +206,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!--chart js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/chart.js"></script>
+    
     <script>
         //slick init
        $('.slider').slick({
@@ -211,13 +248,16 @@
                 display.textContent = minutes + ":" + seconds;
 
                 if (--timer < 0) {
-                    timer = duration;
+                    timer = 0;
+                    //document.getElementById('slider').slick('slickGoTo', 2, true);
+                    //alert('on logic');
+                    //$('.slider').slick('slickGoTo', 2, true);
                 }
             }, 1000);
         }
 
         window.onload = function () {
-            var fiveMinutes = 60 * 5,
+            var fiveMinutes = 60 / 6,
                 display = document.querySelector('#time');
             startTimer(fiveMinutes, display);
         };
