@@ -94,47 +94,4 @@ input[type=radio] {
   }
   .option-input.radio {
     border-radius: 50%;
-  }
-
-/* <h1>Smaple Question - 1</h1>
-<h4 class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum ipsum similique ducimus fuga reiciendis. Eveniet natus rem rerum tempore labore iure ut eum, excepturi quidem voluptate quos. Excepturi molestias voluptatibus debitis laboriosam omnis, molestiae, ex, ad repudiandae dicta quos suscipit vel voluptatum. Illo nemo repudiandae, eveniet eligendi maiores commodi!</h4>
-<h4 class="my-5"> 
-A. Answer A. <br>
-B. Answer B. <br>
-C. Answer C. <br>
-D. Answer D. <br>
-</h4>
-<div class="row">
-<div class="col-xs-3 ml-3">
-<div class="form-check form-check-inline">
-<input style="margin-bottom: 6px; border-radius: 50%;" class="form-check-input option-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">
-<h3>A</h3>
-</label>
-</div>
-</div>
-<div class="col-xs-3 ml-3">
-<div class="form-check form-check-inline">
-<input style="margin-bottom: 6px; border-radius: 50%;"  class="form-check-input option-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">
-<h3>B</h3>
-</label>
-</div>
-</div>
-<div class="col-xs-3 ml-3">
-<div class="form-check form-check-inline">
-<input style="margin-bottom: 6px; border-radius: 50%;"  class="form-check-input option-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">
-<h3>C</h3>
-</label>
-</div>
-</div>
-<div class="col-xs-3 ml-3">
-<div class="form-check form-check-inline">
-<input style="margin-bottom: 6px; border-radius: 50%;"  class="form-check-input option-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-<label class="form-check-label" for="inlineRadio1">
-<h3>D</h3>
-</label>
-</div>
-</div>
-</div> */
+}
