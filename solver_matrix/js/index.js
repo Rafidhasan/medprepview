@@ -13,7 +13,7 @@ function calendarHeatmap() {
     var counterMap= {};
     var data = [];
     var max = null;
-    var colorRange = ['#D8E6E7', '#218380'];
+    var colorRange = ['#4CC3CC', '#19787F'];
     var tooltipEnabled = true;
     var tooltipUnit = 'contribution';
     var legendEnabled = true;
