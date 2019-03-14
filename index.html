@@ -48,11 +48,14 @@
 
     <!--head navbar-->
     <div class="pusher">
-      <div class="ui massive menu inverted custom borderless" style="border-radius: 0!important; border: 0; margin-left: 260px; -webkit-transition-duration: 0.1s;">
+      <div class="ui massive menu inverted custom borderless" style="border-radius: 0!important; border: 0; margin-left: 260px; -webkit-transition-duration: 0.3s;">
         <a class="item openbtn">
           <i class="icon content"></i>
         </a>
-        <a class="item brand-logo">MedPrep</a>
+        <a class="item brand-logo">
+          <span class="med">Med</span>
+          <span class="prep">Prep</span>
+        </a>
         <div class="right menu">
           <div class="ui transparent icon input" style="margin-right: 40px;">
             <input type="text" placeholder="Search users..." style="border-color: white;">
@@ -289,16 +292,41 @@
         <div class="twelve wide column">
           <!--statistics section-->
           <section class="section section_statistics">
-            <div class="ui fluid segment" style="width: 100%;">
+            <div class="ui fluid segment">
               <div id="chart"></div>
             </div>
           </section>
         </div>
-        <div class="four wide column">
+        <div class="four wide column" style="margin-left: -30px;">
           <!--grade section-->
-          <section class="section section_grade">
-              <div class="ui segment" style="width: 100%;">
-                
+          <section class="section_grade" >
+              <div class="ui segment moded">
+                <div class="header">
+                  <center><h2 class="grade_header">
+                    <span class="med">Med</span><span class="prep">Prep</span>
+                    Grade</h2></center>
+                  <br>
+                </div>
+                <center><p>For Raphaeel Chowdhury</p></center>
+                <div class="grade">A+</div>
+                <br>
+                <div class="ui stackable grid">
+                  <div class="four column row">
+                    <div class="left floated column" style="font-size: 10px;">Recent Modals</div>
+                    <div class="right floated column text-blue" style="font-size: 10px;">Show more</div>
+                  </div>
+                  <div class="three column row">
+                    <div class="column">
+                      <button class="fluid ui purple button">7 Days Streak</button>
+                    </div>
+                    <div class="column">
+                      <button class="fluid ui teal button">Night Owl</button>
+                    </div>
+                    <div class="column">
+                      <button class="fluid ui blue button">1 month Streak</button>
+                    </div>
+                  </div>
+                </div>
               </div>
           </section>
         </div>
