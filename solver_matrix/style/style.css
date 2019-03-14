@@ -70,3 +70,48 @@
 .section_footer {
     margin-top: 212px;
 }
+
+.section_statistics {
+    margin-bottom: 20px !important;
+}
+
+
+.square_container {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    background-color: #f1f1f1;
+    margin: -60px 0px;
+}
+
+.square_container>div {
+    width: 100%;    
+    background-color: rgb(181, 183, 185);
+    width: 100%;
+
+    text-align: center;
+    font-size: 30px;
+    border-color: green;
+    border-style: solid;
+}
+
+.right_ans {
+    color: green !important;
+}
+
+.wrong_ans {
+    color: red !important;
+}
+
+.no_ans {
+    color: lightgray !important;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    html {
+      overflow: hidden;
+    }
+  }

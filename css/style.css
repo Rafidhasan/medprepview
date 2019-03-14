@@ -1,97 +1,148 @@
-/* Navbar */
+/*global*/
 
-
-#content {
-    min-height: 100px;
-}
-.ui.grid{
-    padding: 0 !important;
-}
-.pushable.segment{
-    margin: 0 !important;
+.section {
+  margin: 40px 105px;
 }
 
-
-/* Navbar */
-
-/* utilites */
-
-.medium_marginX {
-    margin: 20px 0 !important;
-    color: red;
+.text-muted {
+  font-weight: bold;
+  color: rgb(170, 169, 169);
+  font-size: 11px;
 }
 
-.large_marginX {
-    margin: 35px 0 !important;
+/*global*/
+
+
+
+/*navbar*/
+.marginlefting {
+  margin-left: 60px !important;
 }
 
-.huge_marginX {
-    margin: 60px 0 !important;
-    color: red;
+.displaynone {
+  display: none !important;
 }
 
+.displayblock {
+  display: block !important;
+}
+
+.sidebar .item i {
+  font-size: 24px;
+  margin-top: -5px !important;
+}
+
+.logo {
+  height: 48px !important;
+  padding: 10px !important;
+}
+
+.logo img {
+  width: 100% !important;
+  height: 38px !important;
+}
+
+.title.item {
+  padding: .92857143em 1.14285714em !important;
+}
+
+.dropdown .menu .header {
+  padding-top: 3.9px!important;
+  padding-bottom: 3.9px!important;
+}
+
+.nav-logo {
+  font-size: 20px !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+input[type=text] {
+  color: #fff !important;
+}
+
+
+/*navbar*/
+
+
+/*welcome section*/
+
+.hero_p {
+  font-size: 20px;
+}
+
+.day {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.red_text {
+  color: rgb(202, 123, 123);
+}
+
+/*welcome section*/
+
+/*progress section*/
 
 /* cicle chart */
 
 .single-chart {
-    width: 83%;
-    justify-content: space-around ;
-  }
-  
-  .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
-  }
-  
-  .circle-bg {
-    fill: none;
-    stroke: #eee;
-    stroke-width: 3.8;
-  }
-  
-  .circle {
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    animation: progress 1s ease-out forwards;
-  }
-  
-  @keyframes progress {
-    0% {
-      stroke-dasharray: 0 100;
-    }
-  }
-  
-  .circular-chart.orange .circle {
-    stroke: #ff9f00;
-  }
-  
-  .circular-chart.green .circle {
-    stroke: #4CC790;
-  }
-  
-  .circular-chart.blue .circle {
-    stroke: #3c9ee5;
-  }
-  
-  .circular-chart.red .circle {
-    stroke: orangered;
-  }
+  width: 83%;
+  justify-content: space-around ;
+}
 
-  .percentage {
-    fill: #666;
-    font-family: sans-serif;
-    font-size: 0.5em;
-    text-anchor: middle;
-  }
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  height: 50px;
+  width: auto;
+}
 
-  /* cicle chart */\
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+/* cicle chart */
 
 
-  #all_time_view {
-      display: none;
-  }
+/*progress section*/
 
 
+/*row-2*/
+/* .custom {
+  background-color: #75e8dc;
+  color: white;
+}
+
+.custom:hover {
+  background-color: #06ada5;
+  transition: .3
+} */
