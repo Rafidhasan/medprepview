@@ -139,7 +139,7 @@ input[type=text] {
 }
 
 .section_grade {
-  width: 500px;
+  width: auto;
   margin-top: 40px;
   margin-left: -50px;
 }
