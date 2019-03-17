@@ -4,14 +4,8 @@
   margin: 60px 180px;
 }
 
-.custom_height_table {
-  height: 140px;
-}
 
-.custom_p {
-  font-size: 24px;
-  font-weight: bold;
-}
+
 
 @media only screen and (max-width: 800px) {
   html {
@@ -28,6 +22,24 @@
 }
 
 /*global*/
+
+.brand-logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.med {
+  color: #ca2b43;
+}
+
+.custom_height_table {
+  height: 140px;
+}
+
+.custom_p {
+  font-size: 24px;
+  font-weight: bold;
+}
 
 
 /*message section*/
