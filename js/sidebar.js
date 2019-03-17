@@ -4,4 +4,5 @@ $(".openbtn").on("click", function() {
   $(".sidebar z").toggleClass("displayblock");
   $(".ui.accordion").toggleClass("displayblock");
   $(".ui.dropdown.item").toggleClass("displaynone");
+  $(".brand-logo").toggleClass("displaynone");
 });
