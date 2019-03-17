@@ -12,50 +12,83 @@
 <body>
    <!--Navbar-->
 
-   <div class="ui grid">
-        <div class="computer only row">
-            <div class="column">
-                <div class="ui inverted massive menu">
-                    <a class="item openbtn">
-                        <i class="icon content"></i>
-                    </a>
-                    <a href="index.html" class="brand-logo item"><span class="med">Med</span><span class="prep">Prep</span></a>
-                    <div class="right menu">
-                        <a class="item" href="../index.html">Dashboard</a>
-                        <!-- <a class="item" href="../index.html">Analytics</a> -->
-                        <a class="item active" href="../question/index.html">Questions</a>
-                        <a class="item" href="../solver_matrix/index.html">Solver Matrix</a>
-                        <a class="item">Profile</a>
-                        <a class="item">Settings</a>
-                    </div>
-                </div>
+   <div class="ui sidebar inverted vertical left menu overlay visible very thin icon" style="-webkit-transition-duration: 0.1s; overflow: hidden !important;">
+        <div class="item logo"></div>
+        <div class="ui accordion displaynone">
+          <center>
+            <div class="mobile_display">
+              <h2 style="color:#fff;">Raphael Chowdhury</h2>
+              <div class="sidebar_avatar"></div>
+              <div class="ui grid" style="margin-bottom: 10px;">
+                  <div class="ten wide column">
+                      <div class="ui inverted transparent icon input" style="margin-left: 20px;">
+                        <input type="text" placeholder="Search Users...">
+                        <i class="search icon"></i>
+                      </div>
+                  </div>
+                  <div class="six wide column">
+                      <a href=""><i class="bell outline icon" style="color: white; margin-right: 0px;"></i>
+                  </div>
+              </div>
             </div>
+          </center>
+          <a class="item active" href="index.html"><i class="dashboard icon" style="margin-right: 10px; font-size:20px;"></i><b>Dashboard</b></a>
+          <a class="item" href="#" ><i class="chart bar icon"style="margin-right: 10px; font-size:20px;"></i><b>Analytics</b></a>
+          <a class="item" href="question/index.html"><i class="question icon" style="margin-right: 10px; font-size:20px;"></i><b>Question</b></a>
+          <a class="item" href="#"><i class="cube icon" style="margin-right: 10px; font-size:20px;"></i><b>Solver Matrix</b></a>
+          <a class="item" href="#"><i class="user  icon" style="margin-right: 10px; font-size:20px;"></i><b>Profile</b></a>
+          <a class="item" href="#"><i class="settings icon" style="margin-right: 10px; font-size:20px;"></i><b>Settings</b></a>
         </div>
-        <!--sidenav--> 
-        <div class="tablet mobile only row">
-            <div class="column">
-                <div class="ui inverted massive menu">
-                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
-                    <a href="#" class="brand-logo item">MedPrep</a>
-                </div>
-    
-            </div>
-        </div>   
-        <!--sidenav-->  
-    </div>
-
-    <div class="ui inverted sidebar pushar menu">
-        <a class="item" href="../index.html">Dashboard</a>
-        <a class="item" href="medprepstudash/index.html">Analytics</a>
-        <a class="item active" href="../question/index.html">Questions</a>
-        <a class="item" href="../solver_matrix/index.html">Solver Matrix</a>
-        <a class="item">Profile</a>
-        <a class="item">Settings</a>
-    </div>
-
+        <div class="ui dropdown item>
+          <i class="dashboard icon"></i></a>
+        </div>
+        <div class="ui dropdown item">
+          <i class="chart bar icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="question icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="cube icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="user icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="settings icon"></i>
+        </div>
+      </div>
+  
     <!--/Navbar-->
     
     <div class="pusher">
+        <div class="ui massive menu inverted custom borderless" style="border-radius: 0!important; border: 0; margin-left: 60px; -webkit-transition-duration: 0.3s;">
+            <a class="item openbtn">
+                <i class="icon content"></i>
+            </a>
+            <a class="item brand-logo">
+                <span class="med">Med</span>
+                <span class="prep">Prep</span>
+            </a>
+            <div class="right menu">
+                <div class="ui transparent icon input" style="margin-right: 40px;">
+                <input type="text" class="desktop_display desktop_input" placeholder="Search users..." style="border-color: white;">
+                <i class="search link icon desktop_display" style="color: white !important;"></i>
+                </div>
+                <div class="item desktop_display">
+                <img class="ui avatar image desktop_display" style="height: 20px; width:20px;" src="https://semantic-ui.com/images/avatar/large/elliot.jpg"> Raphael
+                </div>
+            </div>
+            <div class="item"><a href=""><i class="bell outline icon desktop_display" style="color: white; margin-right: 0px;"></i></a></div>
+            <div class="ui inverted dropdown item desktop_display">
+                <i class="globe icon desktop_display" style="margin-left: 2px;"></i> EN <i class="dropdown icon"></i>
+                <div class="menu">
+                <a class="item desktop_display">English</a>
+                <a class="item desktop_display">Bengali</a>
+                </div>
+            </div>
+            </div>
+        </div>
         <!--message section-->
         <section class="section message_section">
             <div class="ui center aligned blue message">
@@ -168,7 +201,7 @@
             <!--3rd row-->
             <div class="ui stackable grid">
                 <div class="eight wide column">
-                    <div class="ui attached fluid segment form custom_height_table">
+                    <div class="ui attached fluid segment form custom_height_table last_table">
                         <h3 style="margin-bottom: 15px;">Rivision Type</h3>
                         <div class="field">
                             <div class="ui stackable grid">
@@ -213,7 +246,7 @@
 
         <div class="ui inverted vertical footer segment">
             <div class="ui center aligned container">
-              <div class="ui stackable inverted divided grid">
+              <div class="ui inverted stackable divided grid">
                 <div class="seven wide column">
                     <h1 class="ui massive inverted header">MedPrep</h1>
                     <p>Extra space for a call to action inside the footer that could help re-engage users.</p>

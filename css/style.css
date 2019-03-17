@@ -10,23 +10,6 @@
   font-size: 11px;
 }
 
-@media only screen and (max-width: 386px) {
-  .section {
-    margin: 40px 60px;
-    width: 295px;
-    margin-left: 64px;
-  }
-
-  .section_statistics {
-    width: 270px;
-  }
-
-  .section_grade  {
-    margin: 40px 4px;
-    width: 263px;
-    margin-left: 68px !important;
-  }
-}
 
 /*global*/
 
