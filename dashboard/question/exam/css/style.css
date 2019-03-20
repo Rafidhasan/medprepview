@@ -1,0 +1,97 @@
+
+
+/*navbar*/
+
+.slider {
+  padding: 60px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav_link {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    padding: 60px 0px;
+  }
+}
+
+.bg-light {
+  background-color: #00B5AD !important;
+}
+
+/*navbar*/
+
+
+input[type=radio] {
+  width:1em;
+  height:1em;
+}
+
+@keyframes click-wave {
+    0% {
+      height: 40px;
+      width: 40px;
+      opacity: 0.35;
+      position: relative;
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+      margin-left: -80px;
+      margin-top: -80px;
+      opacity: 0;
+    }
+  }
+  
+  .option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+  }
+  .option-input:hover {
+    background: #00B5AD ;
+  }
+  .option-input:checked {
+    background: dodgerblue;
+  }
+  .option-input:checked::before {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: dodgerblue;
+    content: '';
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    z-index: 100;
+  }
+  .option-input.radio {
+    border-radius: 50%;
+}

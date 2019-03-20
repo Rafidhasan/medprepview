@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedPrep</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!--Navbar-->
+
+   <div class="ui sidebar inverted vertical left menu overlay visible very thin icon" style="-webkit-transition-duration: 0.1s; overflow: hidden !important;">
+        <div class="item logo"></div>
+        <div class="ui accordion displaynone">
+          <center>
+            <div class="mobile_display">
+              <h2 style="color:#fff;">Raphael Chowdhury</h2>
+              <div class="sidebar_avatar"></div>
+              <div class="ui grid" style="margin-bottom: 10px;">
+                  <div class="ten wide column">
+                      <div class="ui inverted transparent icon input" style="margin-left: 20px;">
+                        <input type="text" class="side_input" placeholder="Search Users...">
+                        <i class="search icon"></i>
+                      </div>
+                  </div>
+                  <div class="six wide column">
+                      <a href=""><i class="bell outline icon" style="color: white; margin-right: 0px;"></i>
+                  </div>
+              </div>
+            </div>
+          </center>
+          <a class="item" href="../index.html"><i class="dashboard icon" style="margin-right: 10px; font-size:20px;"></i><b>Dashboard</b></a>
+          <a class="item" href="#" ><i class="chart bar icon"style="margin-right: 10px; font-size:20px;"></i><b>Analytics</b></a>
+          <a class="item" href="../question/index.html"><i class="question icon" style="margin-right: 10px; font-size:20px;"></i><b>Question</b></a>
+          <a class="item" href="#"><i class="cube icon" style="margin-right: 10px; font-size:20px;"></i><b>Solver Matrix</b></a>
+          <a class="item active" href="index.html"><i class="user  icon" style="margin-right: 10px; font-size:20px;"></i><b>Profile</b></a>
+          <a class="item" href="#"><i class="settings icon" style="margin-right: 10px; font-size:20px;"></i><b>Settings</b></a>
+        </div>
+        <div class="ui dropdown item>
+          <i class="dashboard icon"></i></a>
+        </div>
+        <div class="ui dropdown item">
+          <i class="chart bar icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="question icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="cube icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="user icon"></i>
+        </div>
+        <div class="ui dropdown item">
+          <i class="settings icon"></i>
+        </div>
+      </div>
+  
+    <!--/Navbar-->
+
+    <div class="pusher">
+        <div class="ui massive menu inverted custom borderless" style="border-radius: 0!important; border: 0; margin-left: 60px; -webkit-transition-duration: 0.3s;">
+            <a class="item openbtn">
+                <i class="icon content"></i>
+            </a>
+            <a class="item brand-logo">
+                <span class="med">Med</span>
+                <span class="prep">Prep</span>
+            </a>
+            <div class="right menu">
+                <div class="ui transparent icon input" style="margin-right: 40px;">
+                <input type="text" class="desktop_display desktop_input" placeholder="Search users..." style="border-color: white;">
+                <i class="search link icon desktop_display" style="color: white !important;"></i>
+                </div>
+                <div class="item desktop_display">
+                <img class="ui avatar image desktop_display" style="height: 20px; width:20px;" src="https://semantic-ui.com/images/avatar/large/elliot.jpg"> Raphael
+                </div>
+            </div>
+            <div class="item"><a href=""><i class="bell outline icon desktop_display" style="color: white; margin-right: 0px;"></i></a></div>
+            <div class="ui inverted dropdown item desktop_display">
+                <i class="globe icon desktop_display" style="margin-left: 2px;"></i> EN <i class="dropdown icon"></i>
+                <div class="menu">
+                <a class="item desktop_display">English</a>
+                <a class="item desktop_display">Bengali</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--section welcome message-->
+    <section class="section section_welcome">
+      <div class="ui stackable grid">
+          <div class="four wide column">
+              <div class="header">
+                <div class="ui huge header hero_header">Profile</div>
+                <div class="hero_p"><p> Welcome back, Raphael.</p></div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    
+    <div class="ui three column stackable grid">
+      <div class="column">
+        <!--section person box-->
+        <section class="section section_person_box">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="img/avatar.jpg">
+            </div>
+            <button class="ui teal basic large fluid button">Upload your Image<i class="camera icon" style="margin-left: auto;"></i></button>
+            <div class="content">
+              <a class="header">Raphael Chowdhury</a>
+            </div>
+            <div class="massive extra">
+                Rating:
+                <div class="ui star rating disabled" data-rating="3"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="column">
+        <!--section personal info-->
+        <section class="section section_personal_info">
+          <div class="ui form">
+            <h2 class="ui dividing header">Personal Information</h2>
+            <div class="field">
+              <label for="first_name"><h5 style="color: lightgrey;">First Name</h5></label>
+              <input type="text" value="Raphael">
+              <label for="last_name"><h5 style="color: lightgrey;">Last Name</h5></label>
+              <input type="text" value="Chowdhury">
+            </div>
+            <h2 class="ui dividing header">Contact Information</h2>
+            <div class="field">
+              <label for="email"><h5 style="color: lightgrey;">Email</h5></label>
+              <input type="email" value="..@gmail.com">
+              <label for="number"><h5 style="color: lightgrey;">Phone number</h5></label>
+              <input type="tel" value="0176000000">
+            </div>
+            <h2 class="ui dividing header">Password Management</h2>
+            <div class="field">
+              <label for="password"><h5 style="color: lightgrey;">old password</h5></label>
+              <input type="password" value="211231u2y31u23">
+              <label for="password"><h5 style="color: lightgrey;">new password</h5></label>
+              <input type="password" value="211231u2y31u23">
+            </div>
+            <button class="ui teal fluid button">
+              Save
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="column">
+        <!--progress section-->
+        <section class="section section_progress">
+          <h2 class="ui dividing header">Progress</h2>
+          <div class="ui grid">
+            <div class="four wide column" style="color:#4CC790"><span style="font-size: 2em;">2   </span>  level</div>
+            <div class="four wide column" style="font-weight: bold">170 points</div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+          </div>
+          <br>
+          <div class="ui teal progress">
+            <div class="bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </section>
+        </section>
+      </div>
+    </div>
+
+    <!--person box section-->
+    <div class="ui stackable grid">
+      <div class="two wide column"></div>
+    </div>
+
+    <!--Init jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
+
+    <!--Semantic main js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="js/sidebar.js"> </script>
+    <!--default semantic-->
+    <script>
+        $('.ui.dropdown').dropdown();
+        $(".rating").rating({
+          initialRating: 3,
+          maxRating: 5,
+        });
+        $(".rating").rating('disable');
+
+        $('.progress').progress({
+          percent: 70
+        });
+    </script>
+
+
+</body>
+</html>

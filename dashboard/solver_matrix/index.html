@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedPrep</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!--Navbar-->
+
+    <div class="ui grid">
+        <div class="computer only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                    <div class="right menu">
+                        <a class="item" href="../index.html">Dashboard</a>
+                        <!-- <a class="item" href="">Analytics</a> -->
+                        <a class="item" href="../question/index.html">Questions</a>
+                        <a class="item active" href="../solver_matrix/index.html">Solver Matrix</a>
+                        <a class="item">Profile</a>
+                        <a class="item">Settings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sidenav--> 
+        <div class="tablet mobile only row">
+            <div class="column">
+                <div class="ui teal inverted massive menu">
+                    <a id="mobile_item" class="item"><i class="bars icon"></i></a>
+                    <a href="#" class="brand-logo item">MedPrep</a>
+                </div>
+      
+            </div>
+        </div>   
+        <!--sidenav-->  
+    </div>
+    
+    <div class="ui teal inverted sidebar vertical pushar menu">
+        <a class="item" href="../index.html">Dashboard</a>
+        <!-- <a class="item" href="medprepstudash/index.html">Analytics</a> -->
+        <a class="item" href="../question/index.html">Questions</a>
+        <a class="item active" href="../solver_matrix/index.html">Solver Matrix</a>
+        <a class="item">Profile</a>
+        <a class="item">Settings</a>
+    </div>
+
+    <!--/Navbar-->
+
+    <section class="section section_header" style="margin-bottom: 30px !important;">
+        
+    </section>
+
+    <!--Chart section-->
+    <div class="section section_calender" style="width: 98%; display: none;" id="calendar"></div>
+    <!--/Chart section-->
+
+    <!--statistics section-->
+    <div class="section section_statistics">
+      <div class="square_container">
+        <div class="height: 18px; width: 100%;"><div class="right_ans"></div></div>
+      </div>
+    </div>
+
+    <div class="section section_statistics">
+      <div class="square_container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+        <div>29</div>
+        <div>30</div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <section class="section section_footer">
+        <div class="ui inverted vertical teal footer segment">
+            <div class="ui center aligned container">
+              <div class="ui stackable inverted divided grid">
+                <div class="seven wide column">
+                    <h1 class="ui massive inverted header">MedPrep</h1>
+                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Group 1</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Group 2</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                  </div>
+                </div>
+                <div class="three wide column">
+                  <h4 class="ui inverted header">Group 3</h4>
+                  <div class="ui inverted link list">
+                    <a href="#" class="item">Link One</a>
+                    <a href="#" class="item">Link Two</a>
+                    <a href="#" class="item">Link Three</a>
+                    <a href="#" class="item">Link Four</a>
+                  </div>
+                </div>
+              </div>
+              <div class="ui inverted section divider"></div>
+              <div class="ui horizontal inverted small divided link list">
+                <a class="item" href="#">Site Map</a>
+                <a class="item" href="#">Contact Us</a>
+                <a class="item" href="#">Terms and Conditions</a>
+                <a class="item" href="#">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!--Init jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <!--Semantic main js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js" charset="utf-8"></script>
+    <script src="https://rawgit.com/g1eb/calendar-heatmap/master/dist/calendar-heatmap.min.js"></script>
+
+    <script>
+        (function () {
+            // Initialize random data for the demo
+            var now = moment().endOf('day').toDate();
+            var time_ago = moment().startOf('day').subtract(10, 'year').toDate();
+            var example_data = d3.timeDays(time_ago, now).map(function (dateElement, index) {
+            return {
+                date: dateElement,
+                details: Array.apply(null, new Array(Math.floor(Math.random() * 15))).map(function(e, i, arr) {
+                return {
+                    'name': 'Project ' + Math.ceil(Math.random() * 10),
+                    'date': function () {
+                    var projectDate = new Date(dateElement.getTime());
+                    projectDate.setHours(Math.floor(Math.random() * 24));
+                    projectDate.setMinutes(Math.floor(Math.random() * 60));
+                    return projectDate;
+                    }(),
+                    'value': 3600 * ((arr.length - i) / 5) + Math.floor(Math.random() * 3600) * Math.round(Math.random() * (index / 365))
+                }
+                }),
+                init: function () {
+                this.total = this.details.reduce(function (prev, e) {
+                    return prev + e.value;
+                }, 0);
+                return this;
+                }
+            }.init();
+            });
+    
+            // Set the div target id
+            var div_id = 'calendar';
+    
+            // Set custom color for the calendar heatmap
+            var color = '#cd2327';
+    
+            // Set overview type (choices are year, month and day)
+            var overview = 'year';
+    
+            // Handler function
+            var print = function (val) {
+            console.log(val);
+            };
+    
+            // Initialize calendar heatmap
+            calendarHeatmap.init(example_data, div_id, color, overview, print);
+        })();
+    </script>
+
+</body>
+</html>

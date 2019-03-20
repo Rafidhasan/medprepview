@@ -1,206 +1,367 @@
-/*global*/
-
-.section {
-  margin: 40px 40px 0px 105px;
-}
-
-.text-muted {
-  font-weight: bold;
-  color: rgb(170, 169, 169);
-  font-size: 11px;
+body {
+    background: #FAFAFA
 }
 
 
-/*global*/
+/*cover section */
 
-.med {
-  color: rgb(216, 44, 70);
+
+.main_cover {
+    background: none;
+    min-height: 80vh;
+    margin-bottom: 0;
 }
 
+.cover_wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color:black;
+    height: 85vh;
+    width: auto;
+  }
 
-/*navbar*/
-.marginlefting {
-  margin-left: 260px !important;
-}
-
-
-.displaynone {
-  display: none !important;
-}
-
-.displayblock {
-  display: block !important;
-}
-
-.sidebar .item i {
-  font-size: 24px;
-  margin-top: -5px !important;
+  .cover_wrapper video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100%;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity:0.5;
+  }
+  .cover_wrapper .container {
+    z-index: 2;
+    position: relative;
+  }
+  
+.menu {
+    background-color: transparent !important;
+    border-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    font-size: 25px;
 }
 
 .logo {
-  height: 48px !important;
-  padding: 10px !important;
+    font-size: 2em;
 }
 
-.logo img {
-  width: 100% !important;
-  height: 38px !important;
+.prep {
+    color: whitesmoke;
+    font-weight: bold;
 }
 
-.brand-logo {
-  font-weight: 700;
-  font-size: 20px;
+.med {
+    color: rgb(236, 104, 81);
+    font-weight: bold;
+    margin-right: -8px !important;
 }
 
-.title.item {
-  padding: .92857143em 1.14285714em !important;
-}
-
-.dropdown .menu .header {
-  padding-top: 3.9px!important;
-  padding-bottom: 3.9px!important;
-}
-
-.nav-logo {
-  font-size: 20px !important;
-}
-
-input::placeholder {
-  color: white !important;
-}
-
-input[type=text] {
-  color: #fff !important;
+.cover_content {
+    margin-top: 15em;
 }
 
 
+@media only screen and (max-width: 768px) {
+    .cover_wrapper {
+      height: 85vh;
+    }
+    .logo {
+        font-size: 1em !important;
+    }
 
-@media only screen and (max-width: 1400px) {
-  .desktop_display {
-    display: none !important;
+    .cover_content {
+        margin-top: 4em;
+    }
+
+    .med {
+        color: rgb(236, 104, 81);
+        font-weight: bold;
+        margin-right: -5px !important;
+    }
+
+    .menu {
+        background-color: #262626 !important;
+        border-color: transparent;
+        background-image: none;
+        box-shadow: none;
+        font-size: 25px;
+    }
   }
 
-  .mobile_display {
-    display: block !important;
+  @media only screen and (max-width: 770px) {
+    .cover_content {
+        margin-top: 20em;
+    }
+    
+    .cover_wrapper {
+        height: 100vh;
+        width: 100%;
+      }
   }
-}
 
-.mobile_display {
-  display: none;
-}
-
-.sidebar_avatar {
-  background-image: url(../img/avatar.jpg);
-  height: 150px;
-  width: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/*navbar*/
-
-
-/*welcome section*/
-
-.hero_p {
-  font-size: 20px;
-}
-
-.day {
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-.red_text {
-  color: rgb(202, 123, 123);
-}
-
-/*welcome section*/
-
-/*progress section*/
-
-/* cicle chart */
-
-.single-chart {
-  width: 83%;
-  justify-content: space-around ;
-}
-
-.circular-chart {
-  display: block;
-  margin: 10px auto;
-  height: 50px;
-  width: auto;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #eee;
-  stroke-width: 3.8;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
+  @media only screen and (max-width: 770px) {
+    .cover_content {
+        margin-top: 10em;
+    }
+    
+    .cover_wrapper {
+        height: 100vh;
+        width: 100%;
+      }
   }
+
+
+  #hidden-menu {
+    position:fixed;
+	top:0px;
+	width:100%; 
+	height:75px; 
+	background-color:#262626 !important;
+	color: #FFFFFF;
+    z-index:9999;
+    font-size: 20px;
+    display: none;
+  }
+/*cover section */
+
+/*card section*/
+
+.section_card {
+    padding: 80px;
 }
 
-.circular-chart.green .circle {
-  stroke: #4CC790;
+@media only screen and (max-width: 500px) {
+    .section_card {
+        padding: 30px;
+    }
 }
 
-.percentage {
-  fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
+
+
+/*card section*/
+
+
+/*progesss section */
+
+.section_progress {
+    margin-bottom: 0px;
+    color: white;
 }
 
-.section_grade {
-  margin-top: 40px;
-  margin-left: -70px;
+
+.progress_cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../img/progress_cover.webp");
+    height: 740px;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: brightness(100%);
 }
 
-.text-blue {
-  color: blue
+.progress_content {
+    margin-top: 7em;
 }
 
-.grade_header {
-  font-size: 2.8em;
-  font-weight: 900;
+.progress_content h1{
+    font-size: 3em;
+    font-weight: 700;
 }
 
-.grade {
-  font-size: 7em;
-  text-align: center;
-  margin-top: 45px;
-  margin-bottom: 12px;
-  color: #4CC790;
+.progress_button {
+    padding: 15px 30px;
 }
 
-/* cicle chart */
-
-
-/*progress section*/
-
-
-/*row-2*/
-/* .custom {
-  background-color: #75e8dc;
-  color: white;
+@media only screen and (max-width: 500px) {
+    .section_progress {
+        padding: 0px;
+    }
+    .progress_content {
+        margin-top: 2em;
+    }
 }
 
-.custom:hover {
-  background-color: #06ada5;
-  transition: .3
-} */
+
+/*progesss section */
+
+
+/*table section*/
+
+.section_table {
+    padding: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+    .section_table  {
+        padding: 20px;
+    }
+}
+
+/*table section*/
+
+
+/* discount section */
+
+.section_discount {
+
+    color: white;
+}
+
+
+.discount_cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../img/discount_cover.webp");
+    height: 740px;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: brightness(100%);
+}
+
+.discount_content {
+    margin-top: 7em;
+}
+
+.discount_content h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.discout_button {
+    padding: 15px 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .discount_progress {
+        padding: 0px;
+    }
+    .discount_content {
+        margin-top: 2em;
+    }
+}
+
+/* discount section */
+
+
+/*footer*/
+
+.footer {
+    margin-top: -35px;
+    width:100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #2e2e2e;
+}
+
+@media (max-width: 767px){
+    .footer .content {
+        text-align: center;
+    }
+}
+.media-container-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
+}
+.mbr-white {
+    color: #ffffff;
+}
+
+.mb-3 {
+    margin-bottom: 1rem!important;
+}
+
+@media (max-width: 767px) {
+.footer .foot-title {
+    text-align: center !important;
+}
+}
+
+.low_display {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    .footer .content > div:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+.media-container-column {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.social-list {
+    display: inline-flex;
+}
+
+.footer_icon {
+    color: white;
+    font-size: 2em;
+    margin-right: 13px;
+}
+
+.footer-logo {
+    font-size: 2em;
+}
+
+/*footer*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 25px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: lightgray; /* Add a dark-grey background on hover */
+    transition: .3s;
+}
 
