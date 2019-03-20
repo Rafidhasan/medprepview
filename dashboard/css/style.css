@@ -2,6 +2,7 @@
 
 .section {
   margin: 40px 40px 0px 105px;
+  width: auto;
 }
 
 .text-muted {
@@ -148,6 +149,11 @@ input[type=text] {
   animation: progress 1s ease-out forwards;
 }
 
+.circular-chart {
+  height: 35px;
+  width: auto;
+}
+
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
@@ -170,6 +176,14 @@ input[type=text] {
   margin-left: -70px;
 }
 
+@media only screen and (max-width: 765px) {
+  .section_grade {
+    margin: 40px 40px 0px 105px;
+    width: auto;
+  }
+}
+
+
 .text-blue {
   color: blue
 }
@@ -185,6 +199,10 @@ input[type=text] {
   margin-top: 45px;
   margin-bottom: 12px;
   color: #4CC790;
+}
+
+.section_table{
+  width: auto;
 }
 
 /* cicle chart */
