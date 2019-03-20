@@ -1,6 +1,6 @@
 /*global*/
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 320px) {
     html {
         overflow: hidden !important;
     }
@@ -33,13 +33,13 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 360px) {
     html {
         overflow: hidden !important;
     }
     .section {
-        margin: 40px 60px !important;
-        width: 290px !important;
+        margin: 40px 66px !important;
+        width: 275px !important;
         margin-left: 64px !important;
     }
 
@@ -55,12 +55,12 @@
     }
 
     .section_statistics {
-        width: 260px !important;
+        width: 240px !important;
     }
 
     .section_grade  {
         margin: 40px 4px !important;
-        width: 260px !important;
+        width: 240px !important;
         margin-left: 68px !important;
     }
 }

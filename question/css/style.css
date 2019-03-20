@@ -145,3 +145,10 @@ input[type=text] {
 }
 
 /*message section*/
+
+/*footer*/
+@media only screen and (max-width: 520px) {
+  .footer_copyright_list {
+    margin-left: 30px !important;
+  }
+}
