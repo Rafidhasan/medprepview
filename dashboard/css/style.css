@@ -183,6 +183,13 @@ input[type=text] {
   }
 }
 
+@media only screen and (max-width: 1250px) {
+  .section_grade {
+    margin: 40px 40px 0px 105px;
+    width: auto;
+  }
+}
+
 
 .text-blue {
   color: blue
