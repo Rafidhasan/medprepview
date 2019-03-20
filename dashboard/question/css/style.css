@@ -1,0 +1,154 @@
+/*global*/
+
+.section {
+  margin: 60px 180px;
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    overflow: hidden;
+  }
+
+  .section {
+    margin-right: 20px;
+    margin-left: 90px;
+    margin-top: 60px;
+  }
+
+
+}
+
+@media only screen and (max-width: 759px) {
+  .last_table {
+    height: 250px !important;
+  }
+
+  .custom_height_table {
+    height: 250px !important;
+  }
+}
+
+/*global*/
+
+/*navbar*/
+.marginlefting {
+  margin-left: 260px !important;
+}
+
+
+.displaynone {
+  display: none !important;
+}
+
+.displayblock {
+  display: block !important;
+}
+
+.sidebar .item i {
+  font-size: 24px;
+  margin-top: -5px !important;
+}
+
+.logo {
+  height: 48px !important;
+  padding: 10px !important;
+}
+
+.logo img {
+  width: 100% !important;
+  height: 38px !important;
+}
+
+.brand-logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title.item {
+  padding: .92857143em 1.14285714em !important;
+}
+
+.dropdown .menu .header {
+  padding-top: 3.9px!important;
+  padding-bottom: 3.9px!important;
+}
+
+.nav-logo {
+  font-size: 20px !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+input[type=text] {
+  color: #fff !important;
+}
+
+.sidebar_avatar {
+  background-image: url(../img/avatar.jpg);
+}
+
+@media only screen and (max-width: 1400px) {
+  .desktop_display {
+    display: none !important;
+  }
+
+  .mobile_display {
+    display: block !important;
+  }
+}
+
+.mobile_display {
+  display: none;
+}
+
+.sidebar_avatar {
+  background-image: url(../img/avatar.jpg);
+  height: 150px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+
+.brand-logo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.med {
+  color: #ca2b43;
+}
+
+.custom_height_table {
+  height: 140px;
+}
+
+.custom_p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/*message section*/
+
+.message_header {
+  margin-bottom: 10px;
+}
+
+.message_text {
+  margin-right: 15px;
+}
+
+/*message section*/
+
+/*footer*/
+@media only screen and (max-width: 520px) {
+  .footer_copyright_list {
+    margin-left: 30px !important;
+  }
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedPrep</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.semanticui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!--navbar-->
+    <div class="ui sidebar inverted vertical left menu overlay visible very thin icon" style="-webkit-transition-duration: 0.1s; overflow: hidden !important;">
+      <div class="item logo"></div>
+      <div class="ui accordion displaynone">
+        <center>
+          <div class="mobile_display">
+            <h2 style="color:#fff;">Raphael Chowdhury</h2>
+            <div class="sidebar_avatar"></div>
+            <div class="ui grid" style="margin-bottom: 10px;">
+                <div class="ten wide column">
+                    <div class="ui inverted transparent icon input" style="margin-left: 20px;">
+                      <input type="text" placeholder="Search Users...">
+                      <i class="search icon"></i>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <a href=""><i class="bell outline icon" style="color: white; margin-right: 0px;"></i>
+                </div>
+            </div>
+          </div>
+        </center>
+        <a class="item active" href="index.html"><i class="dashboard icon" style="margin-right: 10px; font-size:20px;"></i><b>Dashboard</b></a>
+        <a class="item" href="#" ><i class="chart bar icon"style="margin-right: 10px; font-size:20px;"></i><b>Analytics</b></a>
+        <a class="item" href="question/index.html"><i class="question icon" style="margin-right: 10px; font-size:20px;"></i><b>Question</b></a>
+        <a class="item" href="#"><i class="cube icon" style="margin-right: 10px; font-size:20px;"></i><b>Solver Matrix</b></a>
+        <a class="item" href="#"><i class="user  icon" style="margin-right: 10px; font-size:20px;"></i><b>Profile</b></a>
+        <a class="item" href="#"><i class="settings icon" style="margin-right: 10px; font-size:20px;"></i><b>Settings</b></a>
+      </div>
+      <div class="ui dropdown item>
+        <i class="dashboard icon"></i></a>
+      </div>
+      <div class="ui dropdown item">
+        <i class="chart bar icon"></i>
+      </div>
+      <div class="ui dropdown item">
+        <i class="question icon"></i>
+      </div>
+      <div class="ui dropdown item">
+        <i class="cube icon"></i>
+      </div>
+      <div class="ui dropdown item">
+        <i class="user icon"></i>
+      </div>
+      <div class="ui dropdown item">
+        <i class="settings icon"></i>
+      </div>
+    </div>
+
+
+
+    <!--head navbar-->
+    <div class="pusher">
+      <div class="ui massive menu inverted custom borderless" style="border-radius: 0!important; border: 0; margin-left: 60px; -webkit-transition-duration: 0.3s;">
+        <a class="item openbtn">
+          <i class="icon content"></i>
+        </a>
+        <a class="item brand-logo">
+          <span class="med">Med</span>
+          <span class="prep">Prep</span>
+        </a>
+        <div class="right menu">
+          <div class="ui transparent icon input" style="margin-right: 40px;">
+            <input type="text" class="desktop_display desktop_input" placeholder="Search users..." style="border-color: white;">
+            <i class="search link icon desktop_display" style="color: white !important;"></i>
+          </div>
+          <div class="item desktop_display">
+            <img class="ui avatar image desktop_display" style="height: 20px; width:20px;" src="https://semantic-ui.com/images/avatar/large/elliot.jpg"> Raphael
+          </div>
+        </div>
+        <div class="item"><a href=""><i class="bell outline icon desktop_display" style="color: white; margin-right: 0px;"></i></a></div>
+        <div class="ui inverted dropdown item desktop_display">
+          <i class="globe icon desktop_display" style="margin-left: 2px;"></i> EN <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item desktop_display">English</a>
+            <a class="item desktop_display">Bengali</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!--welcome section-->
+      <section class="section section_welcome">
+        <div class="ui stackable grid">
+            <div class="four wide column">
+                <div class="header">
+                  <div class="ui huge header hero_header">Dashboard</div>
+                  <div class="hero_p"><p> Welcome back, Raphael.</p></div>
+                </div>
+            </div>
+            <div class="four wide column">
+              <div class="left floated coulmn">
+                <div class="ui info message">
+                  <div class="header">
+                    You are doing well
+                  </div>
+                  <ul class="list">
+                    <li>It's good to see you again.</li>
+                    <li>Did you know it's been a while?</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="four wide column"></div>
+            <div class="four wide column">
+              <div class="right floated column">
+                  <p class="text-muted">Progress</p>
+                  <div class="ui stackable horizontal segments">
+                      <div class="ui center aligned segment">
+                        <div class="count day" style="color:darkred;">123</div>
+                        <br>
+                        <p class="day_p">Days to go</p>
+                      </div>
+                      <div class="ui center aligned segment">
+                        <div class="count day" style="color: #51e2d3">78</div>
+                        <br>
+                        <p class="day_p">Total Questions</p>
+                      </div>
+                      <div class="ui center aligned segment">
+                          <div class="count day" style="color: #51e2d3">4</div>
+                          <br>
+                          <p class="day_p">Average TPQ</p>
+                        <p></p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!--progress section-->
+      <section class="section section_progress">
+        <div class="ui stackable grid">
+          <div class="twelve wide column">
+            <div class="ui stackable grid">
+              <div class="six wide column">
+                  <div class="ui card" style="width: 100%;">
+                      <div class="content">
+                        <div class="header">Medical Admission Test</div>
+                      </div>
+                      <div class="content">
+                        <h1 class="ui sub header">Overall Progress</h1>
+                        <br>
+                        <div class="">
+                          <div class=" day" style="color: #51e2d3">48%</div>
+                          <br>
+                          <div class="ui teal tiny progress">
+                              <div class="tiny bar"></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="extra content">
+                        <div class="ui four column center aligned  grid">
+                          <div class="column">
+                              <div class="single-chart">
+                                  <svg viewBox="0 0 36 36" class="circular-chart green">
+                                    <path class="circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <!-- change the stroke-dasharray using percentage to attach the exact loader dynamically -->
+                                    <path class="circle"
+                                      stroke-dasharray="30, 100" 
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    /> 
+                                    <text x="18" y="20.35" class="percentage">30%</text>
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="column">
+                              <div class="single-chart">
+                                  <svg viewBox="0 0 36 36" class="circular-chart green">
+                                    <path class="circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <!-- change the stroke-dasharray using percentage to attach the exact loader dynamically -->
+                                    <path class="circle"
+                                      stroke-dasharray="75, 100" 
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    /> 
+                                    <text x="18" y="20.35" class="percentage">75%</text>
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="column">
+                              <div class="single-chart">
+                                  <svg viewBox="0 0 36 36" class="circular-chart green">
+                                    <path class="circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <!-- change the stroke-dasharray using percentage to attach the exact loader dynamically -->
+                                    <path class="circle"
+                                      stroke-dasharray="50, 100" 
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    /> 
+                                    <text x="18" y="20.35" class="percentage">50%</text>
+                                  </svg>
+                              </div>
+                          </div>
+                          <div class="column">
+                              <div class="single-chart">
+                                  <svg viewBox="0 0 36 36" class="circular-chart green">
+                                    <path class="circle-bg"
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <!-- change the stroke-dasharray using percentage to attach the exact loader dynamically -->
+                                    <path class="circle"
+                                      stroke-dasharray="25, 100" 
+                                      d="M18 2.0845
+                                        a 15.9155 15.9155 0 0 1 0 31.831
+                                        a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    /> 
+                                    <text x="18" y="20.35" class="percentage">25%</text>
+                                  </svg>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="ten wide left aligned column" style="width: 100%;">
+                <!--leaderboard table-->
+
+                <table class="ui striped table" style="sidth: 100%">
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Rank</th>
+                        <th>TPQ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>random</td>
+                        <td>1225</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>random</td>
+                        <td>1242</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>random</td>
+                        <td>11232</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>random</td>
+                        <td>11520</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>random</td>
+                        <td>10520</td>
+                        <td>1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                <!--leaderboard table-->
+              </div>
+            </div>
+          </div>
+          <div class="four wide column">
+            <button class="fluid ui massive green button">Start Session</button>
+            <br>
+            <button class="fluid ui teal massive button">Start Analysis</button>
+          </div>
+        </div>
+      </section>
+
+      <!--row-3-->
+      <div class="ui stackable grid">
+        <div class="twelve wide column">
+          <!--statistics section-->
+          <section class="section section_statistics">
+            <div class="ui fluid segment" style="margin-right: 40px;" height: 343px;>
+              <div id="chart"></div>
+            </div>
+          </section>
+        </div>
+        <div class="four wide column" style="margin-left:0px;">
+          <!--grade section-->
+          <section class="section section_grade">
+              <div class="ui segment moded">
+                <div class="header">
+                  <center><h2 class="grade_header">
+                    <span class="med">Med</span><span class="prep">Prep</span>
+                    Grade</h2></center>
+                  <br>
+                </div>
+                <center><p>For Raphaeel Chowdhury</p></center>
+                <div class="grade">A+</div><br><br>
+                <br>
+                <div class="ui stackable grid">
+                  <div class="four column row">
+                    <!-- <div class="left floated column" style="font-size: 10px;">Recent Modals</div>
+                    <div class="right floated column text-blue" style="font-size: 10px;">Show more</div> -->
+                  </div>
+                  <div class="three column row">
+                    <div class="column">
+                      <button class="fluid ui purple button tab_content">7 Days Streak</button>
+                    </div>
+                    <div class="column">
+                      <button class="fluid ui teal button tab_content">Night Owl</button>
+                    </div>
+                    <div class="column">
+                      <button class="fluid ui blue button">1 month Streak</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </div>
+      
+
+    </div>
+      
+    <!--navbar-->
+    
+
+    <!--jQuery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+    <!--Semantic main js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="js/sidebar.js"> </script>
+   
+   
+    <!--counter js-->
+    <script src="js/counter.js"></script>
+
+    <!--semantic default js-->
+    <script>
+      $('.ui.dropdown').dropdown();
+      $('.progress').progress({
+        percent: 48
+      });
+    </script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
